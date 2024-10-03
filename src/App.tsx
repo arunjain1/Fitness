@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import Navbar from './screens/Navbar';
 import Home from './screens/Home/index.tsx';
+import Benefits from './screens/Benefits/index.tsx'
 import { Bars3Icon,XMarkIcon } from '@heroicons/react/24/solid';
 
 import { SelectedPage } from './CommonTypes/types.ts';
@@ -28,6 +29,7 @@ function App() {
       <div className='app bg-gray-20'>
        <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} isTopOfPage={isTopOfPage}/>
        <Home selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+       <Benefits setSelectedPage={setSelectedPage}/>
      </div>
     </>
   )
