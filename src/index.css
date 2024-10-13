@@ -8,6 +8,7 @@
 html,body,#root,.app{
   height: 100%;
   width: 100%;
+  box-sizing: border-box;
   font-family: "DM Sans",sans-serif;
   @apply text-gray-500;
 }
